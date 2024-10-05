@@ -50,7 +50,9 @@
                     extend: {
                         colors: {
                             primary: '#171717',
-                            secondary: 'rgba(23, 23, 23, 0.7)'
+                            secondary: 'rgba(23, 23, 23, 0.7)',
+                            accent: 'rgba(37, 37, 37, 0.2)',
+                            btnAccent: '#FF1F3D'
                         }
                     }
                 }
@@ -58,6 +60,45 @@
         </script>
     </head>
     <body>
+        <!-- SECTION Header -->
+        <header>
+            <nav
+                class="navbar w-11/12 m-auto pt-12 pb-8 border-b border-gray-200 flex-col md:flex-row justify-between gap-5">
+                <div class="lg:navbar-start">
+                    <!-- TODO logo -->
+                    <a class="btn btn-ghost">
+                        <img src="./assets/Logo.png" alt="PH Tube" />
+                    </a>
+                </div>
+
+                <!-- TODO search input -->
+                <div class="lg:navbar-center">
+                    <label class="input input-bordered flex items-center gap-2">
+                        <input type="text" class="grow" placeholder="Search" />
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 16 16"
+                            fill="currentColor"
+                            class="h-4 w-4 opacity-70">
+                            <path
+                                fill-rule="evenodd"
+                                d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </label>
+                </div>
+
+                <!-- TODO sort button -->
+                <div class="lg:navbar-end">
+                    <button
+                        class="btn font-medium text-lg text-white bg-btnAccent">
+                        Sort
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <!-- !SECTION Header End -->
         <!-- Link JavaScript files -->
         <script src="./js/script.js"></script>
     </body>
